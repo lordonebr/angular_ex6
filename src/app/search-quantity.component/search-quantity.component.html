@@ -1,0 +1,12 @@
+<div>
+  <p class="textQuantity">
+    Quantidade máxima de filmes:
+    <button
+      *ngFor="let option of options"
+      [ngClass]="{'activeButton':qtPageSel===option.page}"
+      (click)="onClick(option.page)"
+    >
+      {{option.quantity}}
+    </button>
+  </p>
+</div>

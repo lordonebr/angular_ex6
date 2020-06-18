@@ -1,0 +1,11 @@
+<div>
+  <filter (onFilter)="handleFilter($event)"></filter>
+  <search-quantity
+    (onChangeSearchQuantity)="handleSearchQuantity($event)"
+  ></search-quantity>
+  <list-movie
+    [filter]="filter"
+    [category]="category"
+    [quantityPages]="quantityPages"
+  ></list-movie>
+</div>

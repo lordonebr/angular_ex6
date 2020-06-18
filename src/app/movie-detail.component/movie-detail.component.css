@@ -1,0 +1,32 @@
+.detail {
+  margin: 50px 0px 0px 20%;
+  text-align: left;
+}
+
+.imgDiv {
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+img {
+  height: 350px;
+  display: block;
+}
+
+.info {
+  margin: 0px 0px 0px 240px;
+}
+
+.titleSection {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.generos {
+  margin: 0px 0px 0px;
+}
+
+.genero {
+  margin: 5px 0px;
+}

@@ -1,0 +1,23 @@
+<div *ngIf="movie" class="detail">
+  <div class="imgDiv">
+    <img alt="movie poster" src="{{ movie.urlPoster }}" />
+  </div>
+  <div class="info">
+    <h2>{{movie.name}}</h2>
+    <h4>
+      <span class="titleSection">Título original</span>: {{movie.originalName}}
+    </h4>
+    <h4>
+      <span class="titleSection">Data de lançamento:</span>
+      {{movie.releaseDate}}
+    </h4>
+    <h4><span class="titleSection">Nota média:</span> {{movie.nota}}</h4>
+    <h4 class="generos"><span class="titleSection">Gêneros:</span></h4>
+    <ul class="generos">
+      <li *ngFor="let genero of movie.generos">
+        <h5 class="genero">{{genero}}</h5>
+      </li>
+    </ul>
+    <h5><span class="titleSection">Sinopse:</span> {{movie.sinopse}}</h5>
+  </div>
+</div>

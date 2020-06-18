@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <header-title
+    [msg]="title"
+    (onClickTitle)="handleClickTitle()"
+  ></header-title>
+  <nav>
+    <h4>Escolha uma categoria de filmes</h4>
+    <ul>
+      <li
+        *ngFor="let item of menu"
+        [ngClass]="{'menuItem':true, 'itemNotSelected':item.router!==menuSelected, 'itemActive':item.router===menuSelected}"
+      >
+        <a
+          class="linkItem"
+          routerLink="{{item.router}}"
+          (click)="onClickButtonMenu(item.router)"
+          >{{item.name}}</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,15 @@
+h1 {
+  color: white;
+  background: red;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.linkItem {
+  text-decoration: none;
+}
+
+img {
+  width: 150px;
+  margin-bottom: 20px;
+}

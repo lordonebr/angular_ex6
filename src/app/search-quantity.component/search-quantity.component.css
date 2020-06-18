@@ -1,0 +1,9 @@
+.textQuantity {
+  font-weight: bold;
+  color: red;
+}
+
+.activeButton {
+  color: white;
+  background: red;
+}

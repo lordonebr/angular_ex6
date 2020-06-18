@@ -1,0 +1,10 @@
+<div>
+  <form>
+    <label class="txtFilter">Filtrar: </label>
+    <input
+      [(ngModel)]="filter"
+      name="filter"
+      (ngModelChange)="onInputChange($event)"
+    />
+  </form>
+</div>

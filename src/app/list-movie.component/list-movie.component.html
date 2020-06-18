@@ -1,0 +1,18 @@
+<div>
+  <div *ngIf="movies, else zeroMovies">
+    <list-length [moviesLength]="movies.length"></list-length>
+  </div>
+
+  <ng-template #zeroMovies>
+    <list-length [moviesLength]="0"></list-length>
+  </ng-template>
+
+  <p *ngIf="movies && movies.length">
+    Clique em um filme para ver seus detalhes
+  </p>
+  <ul class="movies">
+    <li *ngFor="let movieItem of movies">
+      <movie [movie]="movieItem"></movie>
+    </li>
+  </ul>
+</div>
